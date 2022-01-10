@@ -1,0 +1,39 @@
+.breadcrumbs {
+  margin: 30px 0 35px;
+  color: $blue-main;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      padding-right: 10px;
+      position: relative;
+
+      &:after {
+        position: absolute;
+        content: "/";
+        right: 3px;
+        top: 0;
+      }
+    }
+
+    &:last-child {
+      font-weight: bold;
+    }
+
+    &:first-child {
+      font-weight: normal;
+    }
+  }
+
+  &__link {
+    transition: color 0.3s;
+
+    &:hover {
+      color: $bold-color;
+    }
+  }
+}

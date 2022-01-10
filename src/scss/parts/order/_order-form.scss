@@ -1,0 +1,121 @@
+.order-form {
+  &__left {
+    max-width: 635px;
+    width: 100%;
+    margin-right: 35px;
+
+    @include media-w($md) {
+      margin-right: 0;
+      max-width: 100%;
+    }
+  }
+
+  &__right {
+    max-width: 525px;
+    width: 100%;
+
+    @include media-w($md) {
+      max-width: 100%;
+    }
+  }
+
+  &__label {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    max-width: calc(50% - 13px);
+    width: 100%;
+    margin-bottom: 18px;
+
+    label.error {
+      position: absolute;
+      top: 38px;
+      right: 1px;
+      font-size: 13px;
+      font-weight: 400;
+      color: red;
+    }
+
+    label#mail-error {
+      top: 75px;
+    }
+
+    &:nth-child(even) {
+      margin-right: 13px;
+
+      @include media-w($xs) {
+        margin-right: 0;
+      }
+    }
+
+    @include media-w($xs) {
+      max-width: 100%;
+    }
+  }
+
+  &__name {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: $grey-subtitle;
+    font-size: 14px;
+    font-weight: 500;
+
+    &--rqd {
+      &:after {
+        content: "(обязательно)";
+        color: $blue-hover;
+        padding-left: 2px;
+      }
+    }
+  }
+
+  &__input {
+    border: 1px solid $border-bottom;
+    border-radius: 4px;
+    padding: 13px;
+    outline: transparent;
+    box-shadow: none;
+    transition: box-shadow 0.3s;
+
+    &:focus,
+    &:hover {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &__box {
+    font-weight: 700;
+    margin-bottom: 25px;
+
+    span {
+      display: inline-block;
+      margin-bottom: 6px;
+    }
+  }
+
+  &__type {
+    display: block;
+    color: $grey-subtitle;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__btn {
+    display: block;
+    width: 100%;
+    color: $white-bg;
+    background-color: $red-accent;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 18px;
+    border-radius: 4px;
+    border: none;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #844545;
+    }
+  }
+}

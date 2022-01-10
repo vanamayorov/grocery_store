@@ -1,0 +1,68 @@
+.recipes {
+  padding: 90px 0 110px;
+
+  @include media-w($xs) {
+    padding: 70px 0 50px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    padding-bottom: 25px;
+
+    @include media-w($xs) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    flex: 0 1 calc(33.333% - 12px);
+
+    &:not(:last-child) {
+      @include media-w($md) {
+        margin-right: 24px;
+      }
+
+      @include media-w($xs) {
+        margin-right: 0;
+        margin-bottom: 40px;
+      }
+    }
+
+    @include media-w($md) {
+      flex: unset;
+      min-width: calc(50% - 12px);
+    }
+
+    @include media-w($xs) {
+      min-width: 100%;
+    }
+  }
+
+  &__btn-wrapper {
+    display: none;
+    justify-content: center;
+    @include media-w($md) {
+      display: flex;
+    }
+
+  }
+
+  &__show-more {
+    border: none;
+    background-color: transparent;
+    letter-spacing: 0.02em;
+    color: $black-main;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $blue-main;
+    }
+
+  }
+}

@@ -1,0 +1,61 @@
+.cart-form {
+  max-width: 570px;
+  width: 100%;
+  margin-right: 25px;
+
+  @include media-w($sm) {
+    margin-right: 0;
+  }
+
+  &__label {
+    display: flex;
+
+    @include media-w($xs) {
+      flex-direction: column;
+    }
+  }
+
+  &__input {
+    max-width: 380px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid $grey-placeholder;
+    padding: 20px;
+
+    @include media-w($xs) {
+      margin-bottom: 15px;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    &::placeholder {
+      color: $grey-placeholder;
+    }
+
+    &:focus-visible {
+      outline: transparent;
+    }
+  }
+
+  &__btn {
+    border-radius: 0px 10px 10px 0px;
+    background-color: $blue-main;
+    color: $white-bg;
+    border: none;
+    min-width: 190px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+
+    @include media-w($xs) {
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    &:hover {
+      background-color: $blue-hover;
+    }
+  }
+}

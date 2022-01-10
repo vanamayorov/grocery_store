@@ -1,0 +1,10 @@
+.cart-msg {
+  max-width: 500px;
+  width: 100%;
+  color: $blue-main;
+  font-weight: 400;
+
+  @include media-w($sm) {
+    margin-bottom: 10px;
+  }
+}

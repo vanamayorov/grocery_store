@@ -1,0 +1,95 @@
+<section class="order">
+    <form class="order__form order-form">
+        <div class="order-form__left">
+            <h2 class="order__title">
+                Подробности оплаты
+            </h2>
+            <label class="order-form__label">
+                <span class="order-form__name order-form__name--rqd">Ваше имя:</span>
+                <input type="text" class="order-form__input" name="name" required>
+            </label>
+            <label class="order-form__label">
+                <span class="order-form__name order-form__name--rqd">Ваша фамилия:</span>
+                <input type="text" class="order-form__input" name="surname" required>
+            </label>
+            <label class="order-form__label">
+                <span class="order-form__name order-form__name--rqd">Ваш телефон:</span>
+                <input type="text" class="order-form__input" name="phone" required>
+            </label>
+            <label class="order-form__label">
+                <span class="order-form__name">Ваш e-mail:</span>
+                <input type="text" class="order-form__input" name="mail">
+            </label>
+            <label class="order-form__label">
+                <span class="order-form__name">Ваш адрес:</span>
+                <input type="text" class="order-form__input" name="address">
+            </label>
+        </div>
+        <div class="order-form__right">
+            <ul class="order-summary">
+                <li class="order-summary__item">
+                    <div class="order-summary__row">
+                        <div class="order-summary__text">Подытог:</div>
+                        <div class="order-summary__info">500₽</div>
+                    </div>
+                </li>
+
+                <li class="order-summary__item">
+                    <div class="order-summary__row">
+                        <div class="order-summary__text">Доставка:</div>
+                    </div>
+
+                    <div class="order-summary__row">
+                        <div class="order-summary__text">Доставка по городу:</div>
+                        <div class="order-summary__info">300₽</div>
+                    </div>
+                </li>
+
+                <li class="order-summary__item order-summary__item--bold">
+                    <div class="order-summary__row">
+                        <div class="order-summary__text">Итого:</div>
+                        <div class="order-summary__info">800₽</div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="order-form__box">
+                <span>Вид оплаты</span>
+                <label class="order-form__type">
+                    <input class="order-form__radio" type="radio" name="payment-type" checked>
+                    Оплата наличными при получении
+                </label>
+
+                <label class="order-form__type">
+                    <input class="order-form__radio" type="radio" name="payment-type">
+                    Оплата картой
+                </label>
+            </div>
+
+            <div class="order-form__box">
+                <span>
+                    Вариант доставки
+                </span>
+                <label class="order-form__type">
+                    <input class="order-form__radio" type="radio" name="delivery-type" checked>
+                    Бесплатная доставка
+                </label>
+
+                <label class="order-form__type">
+                    <input class="order-form__radio" type="radio" name="delivery-type">
+                    Единая ставка: 100р
+                </label>
+
+                <label class="order-form__type">
+                    <input class="order-form__radio" type="radio" name="delivery-type">
+                    Единая ставка: 1000р
+                </label>
+            </div>
+
+            <button class="order-form__btn" type="submit">
+                Оформить заказ
+            </button>
+
+        </div>
+    </form>
+</section>

@@ -1,0 +1,25 @@
+@@include("parts/head.html", {
+"title": "Свинина свежезамороженная"
+})
+<div class="global-wrapper">
+    @@include("parts/header.html")
+    <main class="main">
+        @@include("parts/components/_categories-bottom.html")
+        <div class="container">
+            <nav class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Мясо</a></li>
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Свежезамороженное мясо</a></li>
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Свинина свежезамороженная</a></li>
+                </ul>
+            </nav>
+
+            @@include("parts/product-detail/_product-detail.html")
+
+            @@include("parts/components/_related-products.html")
+        </div>
+    </main>
+    @@include("parts/footer.html")
+</div>
+@@include("parts/footer-links.html")

@@ -1,0 +1,60 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "global";
+
+//INDEX
+@import "parts/header/header";
+@import "parts/components/categories-bottom";
+@import "parts/components/breadcrumbs";
+@import "parts/header/categories-list";
+@import "parts/index/banners";
+@import "parts/index/categories-tabs";
+@import "parts/cards/banner-card";
+@import "parts/cards/product-card";
+@import "parts/index/recipes";
+@import "parts/cards/recipe-card";
+@import "parts/index/our-instagram";
+@import "parts/index/about-us";
+@import "parts/map/map";
+@import "parts/footer/footer";
+
+// CATALOGUE
+@import "parts/cards/catalogue-card";
+@import "parts/catalogue/catalogue";
+
+// SALES
+@import "parts/sales/sales";
+
+// ABOUT
+@import "parts/about/about";
+@import "parts/about/benefits-list";
+@import "parts/components/shop-description";
+
+// DELIVERY
+@import "parts/delivery/delivery";
+@import "parts/components/message-text";
+
+// PARTNERS
+@import "parts/partners/partners";
+@import "parts/partners/partners-form";
+
+// CART
+@import "parts/cart/cart";
+@import "parts/cart/cart-form";
+@import "parts/cart/cart-msg";
+
+// PRODUCT-DETAIL
+@import "parts/product-detail/product-detail";
+@import "parts/components/related-products";
+
+// RECIPES
+@import "parts/recipes/recipes-section";
+
+// DISCOUNT
+@import "parts/discount/discount";
+
+// ORDER
+@import "parts/order/order";
+@import "parts/order/order-form";
+@import "parts/order/order-summary";

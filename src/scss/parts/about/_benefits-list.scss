@@ -1,0 +1,72 @@
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+
+  @include media-w($md) {
+    flex-wrap: wrap;
+  }
+
+  @include media-w($xs) {
+    overflow: hidden;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 calc(33.333% - 12px);
+    padding: 29px 10px;
+    background-color: $blue-main;
+    color: $white-bg;
+    font-size: 18px;
+    font-family: "OpenSans", sans-serif;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+
+    @include media-w($xs) {
+      padding: 5px 0;
+    }
+
+    &:not(:last-child) {
+      margin-right: 12px;
+
+      @include media-w($md) {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+
+      @include media-w($sm) {
+        flex: 0 1 100%;
+        margin-bottom: 20px;
+      }
+
+
+    }
+
+    &:not(:nth-child(1)),
+    &:not(:nth-child(2)) {
+      @include media-w($md) {
+        flex: 0 1 100%;
+      }
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      @include media-w($md) {
+        flex: 0 1 calc(50% - 15px);
+      }
+
+      @include media-w($sm) {
+        flex: 0 1 100%;
+      }
+    }
+
+
+  }
+
+  &__svg {
+    height: 85px;
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,8 @@
+.categories-bottom {
+  overflow-x: auto;
+  background-color: $white-bg;
+
+  @include media-w($xs) {
+    display: none;
+  }
+}

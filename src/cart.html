@@ -1,0 +1,24 @@
+@@include("parts/head.html", {
+"title": "Корзина"
+})
+<div class="global-wrapper">
+    @@include("parts/header.html")
+    <main class="main">
+        @@include("parts/components/_categories-bottom.html")
+        <div class="container">
+            <nav class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Корзина</a></li>
+                </ul>
+            </nav>
+
+            @@include("parts/cart/_cart.html")
+        </div>
+
+
+        @@include("parts/map/_map.html")
+    </main>
+    @@include("parts/footer.html")
+</div>
+@@include("parts/footer-links.html")

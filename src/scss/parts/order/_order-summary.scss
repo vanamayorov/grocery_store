@@ -1,0 +1,27 @@
+.order-summary {
+  margin-bottom: 25px;
+
+  &__item {
+    padding: 18px 42px 18px 30px;
+    background-color: $border-bottom;
+    border: 1px solid $grey-accent;
+    font-weight: 400;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+
+    &--bold {
+      font-weight: 700;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}

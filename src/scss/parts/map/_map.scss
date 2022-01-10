@@ -1,0 +1,12 @@
+#map {
+  height: 615px;
+  width: 100%;
+
+  @include media-w($md) {
+    height: 420px;
+  }
+
+  @include media-w($sm) {
+    height: 345px;
+  }
+}

@@ -1,0 +1,27 @@
+@@include("parts/head.html", {
+"title": "Главная"
+})
+<div class="global-wrapper">
+    @@include("parts/header.html")
+    <main class="main">
+        @@include("parts/components/_categories-bottom.html")
+        <div class="container">
+            <nav class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+                </ul>
+            </nav>
+
+            @@include("parts/index/_banners.html")
+            @@include("parts/index/_categories-tabs.html")
+        </div>
+        @@include("parts/index/_our-instagram.html")
+        <div class="container">
+            @@include("parts/index/_recipes.html")
+            @@include("parts/index/_about-us.html")
+        </div>
+        @@include("parts/map/_map.html")
+    </main>
+    @@include("parts/footer.html")
+</div>
+@@include("parts/footer-links.html")

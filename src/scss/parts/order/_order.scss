@@ -1,0 +1,26 @@
+.order {
+  padding: 75px 0;
+
+  @include media-w($xs) {
+    padding: 50px 0;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+
+    @include media-w($xs) {
+      font-size: 24px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+
+    @include media-w($md) {
+      flex-direction: column;
+    }
+  }
+}

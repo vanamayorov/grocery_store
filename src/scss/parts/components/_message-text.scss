@@ -1,0 +1,15 @@
+.message-text {
+  margin-bottom: 25px;
+
+  p {
+    font-weight: 400;
+  }
+
+  &__subtitle {
+    display: inline-block;
+    font-family: "OpenSans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+}

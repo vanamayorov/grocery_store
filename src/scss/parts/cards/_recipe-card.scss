@@ -1,0 +1,87 @@
+.recipe-card {
+  box-shadow: 0 0 transparent;
+  transition: box-shadow 0.3s;
+  border-radius: 5px;
+
+
+  &--grey {
+    .recipe-card__buy {
+      pointer-events: none;
+      background-color: $grey-bg;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.25);
+  }
+
+  &__top {
+    position: relative;
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 21px;
+    text-align: center;
+    font-weight: 700;
+
+    @include media-w($md) {
+      padding: 10px;
+    }
+
+    @include media-w($sm) {
+      position: static;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  &__buy {
+    display: block;
+    text-align: center;
+    padding: 11px;
+    background-color: $blue-main;
+    font-weight: 700;
+    color: $white-bg;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  &__badge-wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 70px;
+    width: 70px;
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      z-index: -1;
+      content: "";
+      border: 35px solid transparent;
+      border-top: 35px solid $white-bg;
+      border-right: 35px solid $white-bg;
+      border-top-right-radius: 5px;
+    }
+  }
+
+  &__badge {
+    display: inline-block;
+    font-size: 16px;
+    color: $blue-main;
+    font-weight: bold;
+    transform: rotate(45deg) translate(25px, -2px);
+    max-width: 60px;
+    overflow: hidden;
+  }
+}

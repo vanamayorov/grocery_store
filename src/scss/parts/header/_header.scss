@@ -1,0 +1,499 @@
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: $white-bg;
+
+  @include media-w($xs) {
+    background-color: $main-bg;
+  }
+
+  &__top {
+    background-color: $blue-main;
+    color: $white-bg;
+    font-weight: 700;
+    font-size: 16px;
+
+    @include media-w($xs) {
+      overflow: hidden;
+      position: absolute;
+      width: 1px;
+      height: 1px;
+    }
+  }
+
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__order {
+    font-weight: 400;
+  }
+
+  &__phone {
+    font-weight: 700;
+
+    @include media-w($lg) {
+      display: block;
+    }
+
+    @include media-w($md) {
+      display: inline-block;
+    }
+  }
+
+  &__main {
+    padding: 30px 0;
+
+    @include media-w($md) {
+      padding: 25px 0;
+    }
+
+    @include media-w($xs) {
+      padding: 18px 0;
+    }
+  }
+
+  &__main-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media-w($md) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__logo-wrapper {
+    max-width: 230px;
+    width: 100%;
+    margin-right: 30px;
+
+    @include media-w($md) {
+      order: 0;
+      margin-right: 0;
+    }
+
+    @include media-w($xs) {
+      max-width: 160px;
+    }
+
+  }
+
+  &__tel {
+    display: none;
+
+    @include media-w($xs) {
+      display: block;
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: $blue-hover;
+    }
+  }
+
+  &__form-wrapper {
+    width: 100%;
+    margin-right: 50px;
+
+    .menu__show-btn {
+      display: none;
+    }
+
+    @include media-w($md) {
+      order: 2;
+      margin-top: 20px;
+      margin-right: 0;
+    }
+
+    @include media-w($xs) {
+      display: flex;
+      .menu__show-btn {
+        display: block;
+      }
+    }
+  }
+}
+
+.menu {
+  display: flex;
+
+  &--column {
+    @include media-w($sm) {
+      justify-content: center;
+    }
+  }
+
+  &__catalog-wrapper {
+    display: flex;
+    position: relative;
+
+    &:hover {
+      .menu__catalog-btn {
+        background-color: $green-main;
+      }
+
+      .dropdown-list {
+        opacity: 1;
+        pointer-events: all;
+        background-color: $blue-main;
+      }
+    }
+  }
+
+  &__show-btn {
+    background-color: transparent;
+    border: none;
+    padding: 18px 16px;
+    display: none;
+
+    @include media-w($md) {
+      display: block;
+      padding: 12px 15px;
+    }
+
+    @include media-w($xs) {
+      background-color: $blue-main;
+      border-radius: 5px;
+      padding: 15px;
+      margin-right: 25px;
+    }
+  }
+
+  &__show-svg {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    fill: #fff;
+  }
+
+  &__catalog-btn {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    padding: 12px 20px 15px;
+    transition: background-color 0.3s;
+
+    @include media-w($md) {
+      padding: 12px 20px;
+    }
+
+    &:hover {
+      background-color: $green-main;
+    }
+
+  }
+
+  &__list {
+    display: flex;
+
+    &--column {
+      flex-direction: column;
+      font-weight: bold;
+    }
+
+    &:not(.menu__list--column) {
+      @include media-w($md) {
+        flex-direction: column;
+        max-width: 70%;
+        height: 100%;
+        overflow: auto;
+        padding-top: 60px;
+        background-color: $blue-main;
+        padding-bottom: 60px;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 12px 20px 15px;
+
+  }
+
+  &__item {
+    display: inline-block;
+    background-color: transparent;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $blue-hover;
+    }
+
+    &--accent {
+      background-color: $red-accent;
+
+      &:hover {
+        background-color: #9a3422;
+      }
+    }
+
+    &--green {
+      &:hover {
+        background-color: $green-main;
+      }
+    }
+
+    &--green-accent {
+      background-color: $green-main;
+    }
+  }
+
+  &__svg {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-bottom: 3px;
+    fill: #fff;
+  }
+
+  &__list-wrapper {
+
+    @include media-w($md) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 9999;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transform: translateX(-300%);
+      pointer-events: none;
+      transition: transform ease-out 0.5s;
+    }
+
+
+    &--show {
+      opacity: 1;
+      pointer-events: all;
+      transform: translateX(0);
+    }
+  }
+
+  &__close-btn {
+    display: none;
+    @include media-w($md) {
+      position: absolute;
+      display: block;
+      background-color: transparent;
+      border: none;
+      right: 30%;
+      top: 10px;
+    }
+  }
+
+  &__close-svg {
+    fill: #fff;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.dropdown-list {
+  position: absolute;
+  width: 200px;
+  left: 0;
+  top: 45px;
+  opacity: 0;
+  z-index: 3;
+  pointer-events: none;
+
+  @include media-w($md) {
+    top: 45px;
+  }
+
+  &__item {
+    background-color: transparent;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $blue-hover;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 12px 20px 15px;
+  }
+}
+
+.header-form {
+  position: relative;
+  width: 100%;
+
+  &__search {
+    width: 100%;
+    padding: 13px 30px;
+    border: 3px solid $grey-border;
+    border-radius: 30px;
+    color: $grey-placeholder;
+    box-shadow: none;
+    background-image: url('../img/icons/search-icon.svg');
+    background-size: 19px;
+    background-position: 95% 13px;
+    background-repeat: no-repeat;
+    transition: box-shadow 0.3s;
+
+    &:focus,
+    &:hover {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    &:focus-visible {
+      outline: transparent;
+    }
+  }
+
+  &__result-list {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+  }
+
+  &__result-link {
+    display: block;
+    color: $blue-main;
+    padding: 13px 30px;
+    border: 3px solid $grey-border;
+    border-radius: 30px;
+    background-color: #fff;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #ededed;
+    }
+  }
+}
+
+.logo {
+  display: block;
+  height: 50px;
+  transform: scale(1);
+  transition: transform 0.3s;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.header-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 170px;
+  width: 100%;
+
+  @include media-w($md) {
+    order: 1;
+    width: unset;
+    max-width: unset;
+  }
+
+  @include media-w($xs) {
+    flex-direction: column;
+  }
+
+  &__btn {
+    flex: none;
+    position: relative;
+    width: 54px;
+    height: 54px;
+    margin-right: 27px;
+    background-color: transparent;
+    border: 3px solid $grey-btn;
+    border-radius: 50%;
+    transition: border-color 0.3s;
+
+    @include media-w($md) {
+      width: 75px;
+      height: 75px;
+    }
+
+    @include media-w($xs) {
+      width: 54px;
+      height: 54px;
+      margin-right: 0;
+      border: none;
+    }
+
+    &:hover {
+      border-color: #b0adad;
+    }
+  }
+
+
+  &__svg {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    fill: $blue-main;
+
+    use {
+      &:last-child {
+        display: none;
+      }
+    }
+
+    @include media-w($md) {
+      width: 33px;
+      height: 33px;
+      use {
+        &:first-child {
+          display: none;
+        }
+
+        &:last-child {
+          display: block;
+        }
+      }
+    }
+
+    @include media-w($xs) {
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  &__qty {
+    position: absolute;
+    top: -5px;
+    right: -20px;
+    min-width: 32px;
+    color: $black-main;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    padding: 5px;
+    background-color: $green-main;
+    border-radius: 50%;
+  }
+
+  &__info {
+    color: $bold-color;
+  }
+
+  &__price {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  &__name {
+    @include media-w($xs) {
+      display: none;
+    }
+  }
+}

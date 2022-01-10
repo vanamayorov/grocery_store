@@ -1,0 +1,22 @@
+@@include("parts/head.html", {
+"title": "Доставка и оплата"
+})
+<div class="global-wrapper">
+    @@include("parts/header.html")
+    <main class="main">
+        @@include("parts/components/_categories-bottom.html")
+        <div class="container">
+            <nav class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Доставка и оплата</a></li>
+                </ul>
+            </nav>
+
+        @@include("parts/delivery/_delivery.html")
+        </div>
+        @@include("parts/map/_map.html")
+    </main>
+    @@include("parts/footer.html")
+</div>
+@@include("parts/footer-links.html")

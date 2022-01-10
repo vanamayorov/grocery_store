@@ -1,0 +1,78 @@
+.categories-tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+
+  @include media-w($xs) {
+    padding-bottom: 25px;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    @include media-w($xs) {
+      flex-direction: column;
+    }
+  }
+
+  &__button {
+    color: $black-main;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 24px 20px;
+    letter-spacing: 0.02em;
+    background-color: transparent;
+    border: none;
+    transition: color 0.3s;
+
+    &--active {
+      color: $blue-main;
+    }
+
+    &:hover {
+      color: $blue-main;
+    }
+
+    @include media-w($sm) {
+      padding: 10px;
+      font-size: 16px;
+    }
+  }
+
+  &__products-list {
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    width: 100%;
+
+    &--active {
+      display: flex;
+    }
+  }
+
+  &__product {
+    flex: 0 1 calc(50% - 12px);
+    margin-bottom: 20px;
+
+    @include media-w($md) {
+      flex: 0 1 100%;
+    }
+  }
+
+
+  &__show-more {
+    border: none;
+    background-color: transparent;
+    letter-spacing: 0.02em;
+    color: $black-main;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $blue-main;
+    }
+  }
+}

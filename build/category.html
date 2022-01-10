@@ -1,0 +1,839 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Категория</title>
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="global-wrapper">
+    <header class="header">
+    <div class="header__top">
+        <div class="container">
+            <div class="header__top-inner">
+                <nav class="menu">
+                    <button class="menu__show-btn">
+                        <svg class="menu__show-svg">
+                            <use xlink:href="img/sprite.svg#show-menu"></use>
+                        </svg>
+                    </button>
+                    <div class="menu__catalog-wrapper">
+                        <button class="menu__catalog-btn">
+                            <svg class="menu__svg">
+                                <use xlink:href="img/sprite.svg#catalogue-icon"></use>
+                            </svg>
+                            Каталог
+                        </button>
+                        <ul class="dropdown-list">
+                            <li class="dropdown-list__item">
+                                <a class="dropdown-list__link" href="#">Акции</a>
+                            </li>
+                            <li class="dropdown-list__item">
+                                <a class="dropdown-list__link" href="#">Контакты</a>
+                            </li>
+                            <li class="dropdown-list__item">
+                                <a class="dropdown-list__link" href="#">О нас</a>
+                            </li>
+                            <li class="dropdown-list__item">
+                                <a class="dropdown-list__link" href="#">Доставка и оплата</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="menu__list-wrapper">
+                        <button class="menu__close-btn">
+                            <svg class="menu__close-svg">
+                                <use xlink:href="img/sprite.svg#close-icon"></use>
+                            </svg>
+                        </button>
+
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                    О нас
+                                </a>
+                            </li>
+
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                    Доставка и оплата
+                                </a>
+                            </li>
+
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                    Партнерам
+                                </a>
+                            </li>
+
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                    Контакты
+                                </a>
+                            </li>
+
+                            <li class="menu__item menu__item--accent">
+                                <a class="menu__link" href="#">
+                                    <svg class="menu__svg">
+                                        <use xlink:href="img/sprite.svg#sales-icon"></use>
+                                    </svg>
+                                    Акции
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="header__order">
+                    <span class="header__order-name">
+                        Заказы по телефону:
+                    </span>
+                    <a class="header__phone" href="tel:89180000000">8(918)000-00-00</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="header__main">
+        <div class="container">
+            <div class="header__main-inner">
+                <div class="header__logo-wrapper">
+                    <a class="header__logo logo" href="#">
+                        <img class="logo__img" src="img/sprite.svg#logo" alt="Website logo">
+                    </a>
+
+                    <a class="header__tel" href="tel:89180000000">8(918)000-00-00</a>
+                </div>
+
+                <div class="header__form-wrapper">
+                    <button class="menu__show-btn">
+                        <svg class="menu__show-svg">
+                            <use xlink:href="img/sprite.svg#show-menu"></use>
+                        </svg>
+                    </button>
+                    <form class="header-form">
+                        <input class="header-form__search" type="text" placeholder="Найти товар">
+
+                        <ul class="header-form__result-list">
+                            <li class="header-form__result-item">
+                                <a class="header-form__result-link" href="#">Свинина копченая</a>
+                            </li>
+                            <li class="header-form__result-item">
+                                <a class="header-form__result-link" href="#">Свинина ребра замороженные</a>
+                            </li>
+                            <li class="header-form__result-item">
+                                <a class="header-form__result-link" href="#">Свинина шея</a>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="header__cart header-cart">
+                    <button class="header-cart__btn" type="button">
+                        <svg class="header-cart__svg">
+                            <use xlink:href="img/sprite.svg#shopping-cart-icon"></use>
+                            <use xlink:href="img/sprite.svg#cart-icon2"></use>
+                        </svg>
+
+                        <span class="header-cart__qty">
+                        153
+                    </span>
+                    </button>
+                    <div class="header-cart__info">
+                        <span class="header-cart__name">
+                            Корзина
+                        </span>
+                        <span class="header-cart__price">
+                            52 325 руб.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</header>
+
+
+    <main class="main">
+        <div class="categories-bottom">
+    <div class="container">
+        <ul class="categories-list">
+            <li class="categories-list__item">
+                <a class="categories-list__link" href="#">
+                    <div class="categories-list__img-wrapper">
+                        <img class="categories-list__img" src="img/categories-list/1.png" alt="product photo">
+                    </div>
+                    <span class="categories-list__title">
+                            Мясо
+                        </span>
+                </a>
+            </li>
+            <li class="categories-list__item">
+                <a class="categories-list__link" href="#">
+                    <div class="categories-list__img-wrapper">
+                        <img class="categories-list__img" src="img/categories-list/2.png" alt="product photo">
+                    </div>
+                    <span class="categories-list__title">
+                            Морепродукты
+                        </span>
+                </a>
+            </li>
+            <li class="categories-list__item">
+                <a class="categories-list__link" href="#">
+                    <div class="categories-list__img-wrapper">
+                        <img class="categories-list__img" src="img/categories-list/3.png" alt="product photo">
+                    </div>
+                    <span class="categories-list__title">
+                            Все для курения
+                        </span>
+                </a>
+            </li>
+            <li class="categories-list__item">
+                <a class="categories-list__link" href="#">
+                    <div class="categories-list__img-wrapper">
+                        <img class="categories-list__img" src="img/categories-list/4.png" alt="product photo">
+                    </div>
+                    <span class="categories-list__title">
+                            Напитки
+                        </span>
+                </a>
+            </li>
+            <li class="categories-list__item">
+                <a class="categories-list__link" href="#">
+                    <div class="categories-list__img-wrapper">
+                        <img class="categories-list__img" src="img/categories-list/5.png" alt="product photo">
+                    </div>
+                    <span class="categories-list__title">
+                            Бакалея
+                        </span>
+                </a>
+            </li>
+            <li class="categories-list__item">
+                <a class="categories-list__link" href="#">
+                    <div class="categories-list__img-wrapper">
+                        <img class="categories-list__img" src="img/categories-list/6.png" alt="product photo">
+                    </div>
+                    <span class="categories-list__title">
+                            Снеки
+                        </span>
+                </a>
+            </li>
+            <li class="categories-list__item">
+                <a class="categories-list__link" href="#">
+                    <div class="categories-list__img-wrapper">
+                        <img class="categories-list__img" src="img/categories-list/7.png" alt="product photo">
+                    </div>
+                    <span class="categories-list__title">
+                            Орехи
+                        </span>
+                </a>
+            </li>
+            <li class="categories-list__item">
+                <a class="categories-list__link" href="#">
+                    <div class="categories-list__img-wrapper">
+                        <img class="categories-list__img" src="img/categories-list/8.png" alt="product photo">
+                    </div>
+                    <span class="categories-list__title">
+                            Специи
+                        </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+        <div class="container">
+            <nav class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a></li>
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Свинина</a></li>
+                </ul>
+            </nav>
+
+            <section class="category">
+    <section class="categories-tabs">
+        <ul class="categories-tabs__top">
+            <li class="categories-tabs__item">
+                <button class="categories-tabs__button categories-tabs__button--active" type="button" data-btn="1">Свинина</button>
+            </li>
+            <li class="categories-tabs__item">
+                <button class="categories-tabs__button" type="button" data-btn="2">Говядина</button>
+            </li>
+            <li class="categories-tabs__item">
+                <button class="categories-tabs__button" type="button" data-btn="3">Баранина</button>
+            </li>
+            <li class="categories-tabs__item">
+                <button class="categories-tabs__button" type="button" data-btn="4">Крольчатина</button>
+            </li>
+            <li class="categories-tabs__item">
+                <button class="categories-tabs__button" type="button" data-btn="5">Оленина</button>
+            </li>
+        </ul>
+
+
+        <ul class="categories-tabs__products-list categories-tabs__products-list--active" data-tab="1">
+            <li class="categories-tabs__product">
+                <article class="product-card">
+                    <a class="product-card__top" href="#">
+                        <div class="product-card__img-wrapper">
+                            <img class="product-card__img" src="img/categories-tabs/1.jpg" alt="Product img">
+                        </div>
+
+                        <div class="product-card__content">
+                            <div class="product-card__title">чипсы Delicados nachos</div>
+                            <div class="product-card__desc">кукурузные оригинальные 500 г</div>
+                            <div class="product-card__pricing">
+                                <div class="product-card__price">Цена от 1шт: <span>от 45р/шт.</span></div>
+                                <div class="product-card__price">Цена от 10шт: <span>от 35р/шт.</span></div>
+                            </div>
+                            <div class="product-card__category">Снеки</div>
+                        </div>
+                    </a>
+                    <button class="product-card__buy" type="button">Купить</button>
+                </article>
+            </li>
+            <li class="categories-tabs__product">
+                <article class="product-card product-card--green">
+                    <a class="product-card__top" href="#">
+                        <div class="product-card__img-wrapper">
+                            <img class="product-card__img" src="img/categories-tabs/1.jpg" alt="Product img">
+                        </div>
+
+                        <div class="product-card__content">
+                            <div class="product-card__badge-wrapper">
+                                <span class="product-card__badge">Новинка</span>
+                            </div>
+                            <div class="product-card__title">чипсы Delicados nachos</div>
+                            <div class="product-card__desc">кукурузные оригинальные 500 г</div>
+                            <div class="product-card__pricing">
+                                <div class="product-card__price">Цена от 1шт: <span>от 45р/шт.</span></div>
+                                <div class="product-card__price">Цена от 10шт: <span>от 35р/шт.</span></div>
+                            </div>
+                            <div class="product-card__category">Снеки</div>
+                        </div>
+                    </a>
+                    <button class="product-card__buy" type="button">Купить</button>
+                </article>
+            </li>
+            <li class="categories-tabs__product">
+                <article class="product-card product-card--red">
+                    <a class="product-card__top" href="#">
+                        <div class="product-card__img-wrapper">
+                            <img class="product-card__img" src="img/categories-tabs/1.jpg" alt="Product img">
+                        </div>
+
+                        <div class="product-card__content">
+                            <div class="product-card__badge-wrapper">
+                                <span class="product-card__badge">Хит!</span>
+                            </div>
+                            <div class="product-card__title">чипсы Delicados nachos</div>
+                            <div class="product-card__desc">кукурузные оригинальные 500 г</div>
+                            <div class="product-card__pricing">
+                                <div class="product-card__price">Цена от 1шт: <span>от 45р/шт.</span></div>
+                                <div class="product-card__price">Цена от 10шт: <span>от 35р/шт.</span></div>
+                            </div>
+                            <div class="product-card__category">Снеки</div>
+                        </div>
+                    </a>
+                    <button class="product-card__buy" type="button">Купить</button>
+                </article>
+            </li>
+            <li class="categories-tabs__product">
+                <article class="product-card product-card--yellow">
+                    <a class="product-card__top" href="#">
+                        <div class="product-card__img-wrapper">
+                            <img class="product-card__img" src="img/categories-tabs/1.jpg" alt="Product img">
+                        </div>
+
+                        <div class="product-card__content">
+                            <div class="product-card__badge-wrapper">
+                                <span class="product-card__badge">Скидка</span>
+                            </div>
+                            <div class="product-card__title">чипсы Delicados nachos</div>
+                            <div class="product-card__desc">кукурузные оригинальные 500 г</div>
+                            <div class="product-card__pricing">
+                                <div class="product-card__price">Цена от 1шт: <span>от 45р/шт.</span></div>
+                                <div class="product-card__price">Цена от 10шт: <span>от 35р/шт.</span></div>
+                            </div>
+                        </div>
+                    </a>
+                    <button class="product-card__buy" type="button">Купить</button>
+                </article>
+            </li>
+            <li class="categories-tabs__product">
+                <article class="product-card">
+                    <a class="product-card__top" href="#">
+                        <div class="product-card__img-wrapper">
+                            <img class="product-card__img" src="img/categories-tabs/1.jpg" alt="Product img">
+                        </div>
+
+                        <div class="product-card__content">
+                            <div class="product-card__title">чипсы Delicados nachos</div>
+                            <div class="product-card__desc">кукурузные оригинальные 500 г</div>
+                            <div class="product-card__pricing">
+                                <div class="product-card__price">Цена от 1шт: <span>от 45р/шт.</span></div>
+                                <div class="product-card__price">Цена от 10шт: <span>от 35р/шт.</span></div>
+                            </div>
+                            <div class="product-card__category">Снеки</div>
+                        </div>
+                    </a>
+                    <button class="product-card__buy" type="button">Купить</button>
+                </article>
+            </li>
+            <li class="categories-tabs__product">
+                <article class="product-card product-card--grey">
+                    <a class="product-card__top" href="#">
+                        <div class="product-card__img-wrapper">
+                            <img class="product-card__img" src="img/categories-tabs/1.jpg" alt="Product img">
+                        </div>
+
+                        <div class="product-card__content">
+                            <div class="product-card__title">чипсы Delicados nachos</div>
+                            <div class="product-card__desc">кукурузные оригинальные 500 г</div>
+                            <div class="product-card__pricing">
+                                <div class="product-card__price">Цена от 1шт: <span>от 45р/шт.</span></div>
+                                <div class="product-card__price">Цена от 10шт: <span>от 35р/шт.</span></div>
+                            </div>
+                            <div class="product-card__category">Снеки</div>
+                        </div>
+                    </a>
+                    <button class="product-card__buy" type="button">Купить</button>
+                </article>
+            </li>
+        </ul>
+        <ul class="categories-tabs__products-list" data-tab="2">
+            <li class="categories-tabs__product">
+                <article class="product-card">
+                    <a class="product-card__top" href="#">
+                        <div class="product-card__img-wrapper">
+                            <img class="product-card__img" src="img/categories-tabs/1.jpg" alt="Product img">
+                        </div>
+
+                        <div class="product-card__content">
+                            <div class="product-card__title">чипсы Delicados nachos</div>
+                            <div class="product-card__desc">кукурузные оригинальные 500 г</div>
+                            <div class="product-card__pricing">
+                                <div class="product-card__price">Цена от 1шт: <span>от 45р/шт.</span></div>
+                                <div class="product-card__price">Цена от 10шт: <span>от 35р/шт.</span></div>
+                            </div>
+                            <div class="product-card__category">Снеки</div>
+                        </div>
+                    </a>
+                    <button class="product-card__buy" type="button">Купить</button>
+                </article>
+            </li>
+            <li class="categories-tabs__product">
+                <article class="product-card product-card--green">
+                    <a class="product-card__top" href="#">
+                        <div class="product-card__img-wrapper">
+                            <img class="product-card__img" src="img/categories-tabs/1.jpg" alt="Product img">
+                        </div>
+
+                        <div class="product-card__content">
+                            <div class="product-card__badge-wrapper">
+                                <span class="product-card__badge">Новинка</span>
+                            </div>
+                            <div class="product-card__title">чипсы Delicados nachos</div>
+                            <div class="product-card__desc">кукурузные оригинальные 500 г</div>
+                            <div class="product-card__pricing">
+                                <div class="product-card__price">Цена от 1шт: <span>от 45р/шт.</span></div>
+                                <div class="product-card__price">Цена от 10шт: <span>от 35р/шт.</span></div>
+                            </div>
+                            <div class="product-card__category">Снеки</div>
+                        </div>
+                    </a>
+                    <button class="product-card__buy" type="button">Купить</button>
+                </article>
+            </li>
+        </ul>
+        <ul class="categories-tabs__products-list" data-tab="3">
+            <li class="categories-tabs__product">
+                <article class="product-card">
+                    <a class="product-card__top" href="#">
+                        <div class="product-card__img-wrapper">
+                            <img class="product-card__img" src="img/categories-tabs/1.jpg" alt="Product img">
+                        </div>
+
+                        <div class="product-card__content">
+                            <div class="product-card__title">чипсы Delicados nachos</div>
+                            <div class="product-card__desc">кукурузные оригинальные 500 г</div>
+                            <div class="product-card__pricing">
+                                <div class="product-card__price">Цена от 1шт: <span>от 45р/шт.</span></div>
+                                <div class="product-card__price">Цена от 10шт: <span>от 35р/шт.</span></div>
+                            </div>
+                            <div class="product-card__category">Снеки</div>
+                        </div>
+                    </a>
+                    <button class="product-card__buy" type="button">Купить</button>
+                </article>
+            </li>
+            <li class="categories-tabs__product">
+                <article class="product-card product-card--green">
+                    <a class="product-card__top" href="#">
+                        <div class="product-card__img-wrapper">
+                            <img class="product-card__img" src="img/categories-tabs/1.jpg" alt="Product img">
+                        </div>
+
+                        <div class="product-card__content">
+                            <div class="product-card__badge-wrapper">
+                                <span class="product-card__badge">Новинка</span>
+                            </div>
+                            <div class="product-card__title">чипсы Delicados nachos</div>
+                            <div class="product-card__desc">кукурузные оригинальные 500 г</div>
+                            <div class="product-card__pricing">
+                                <div class="product-card__price">Цена от 1шт: <span>от 45р/шт.</span></div>
+                                <div class="product-card__price">Цена от 10шт: <span>от 35р/шт.</span></div>
+                            </div>
+                            <div class="product-card__category">Снеки</div>
+                        </div>
+                    </a>
+                    <button class="product-card__buy" type="button">Купить</button>
+                </article>
+            </li>
+
+            <li class="categories-tabs__product">
+                <article class="product-card">
+                    <a class="product-card__top" href="#">
+                        <div class="product-card__img-wrapper">
+                            <img class="product-card__img" src="img/categories-tabs/1.jpg" alt="Product img">
+                        </div>
+
+                        <div class="product-card__content">
+                            <div class="product-card__title">чипсы Delicados nachos</div>
+                            <div class="product-card__desc">кукурузные оригинальные 500 г</div>
+                            <div class="product-card__pricing">
+                                <div class="product-card__price">Цена от 1шт: <span>от 45р/шт.</span></div>
+                                <div class="product-card__price">Цена от 10шт: <span>от 35р/шт.</span></div>
+                            </div>
+                            <div class="product-card__category">Снеки</div>
+                        </div>
+                    </a>
+                    <button class="product-card__buy" type="button">Купить</button>
+                </article>
+            </li>
+            <li class="categories-tabs__product">
+                <article class="product-card product-card--grey">
+                    <a class="product-card__top" href="#">
+                        <div class="product-card__img-wrapper">
+                            <img class="product-card__img" src="img/categories-tabs/1.jpg" alt="Product img">
+                        </div>
+
+                        <div class="product-card__content">
+                            <div class="product-card__title">чипсы Delicados nachos</div>
+                            <div class="product-card__desc">кукурузные оригинальные 500 г</div>
+                            <div class="product-card__pricing">
+                                <div class="product-card__price">Цена от 1шт: <span>от 45р/шт.</span></div>
+                                <div class="product-card__price">Цена от 10шт: <span>от 35р/шт.</span></div>
+                            </div>
+                            <div class="product-card__category">Снеки</div>
+                        </div>
+                    </a>
+                    <button class="product-card__buy" type="button">Купить</button>
+                </article>
+            </li>
+        </ul>
+        <ul class="categories-tabs__products-list" data-tab="4">
+            <li class="categories-tabs__product">
+                <article class="product-card">
+                    <a class="product-card__top" href="#">
+                        <div class="product-card__img-wrapper">
+                            <img class="product-card__img" src="img/categories-tabs/1.jpg" alt="Product img">
+                        </div>
+
+                        <div class="product-card__content">
+                            <div class="product-card__title">чипсы Delicados nachos</div>
+                            <div class="product-card__desc">кукурузные оригинальные 500 г</div>
+                            <div class="product-card__pricing">
+                                <div class="product-card__price">Цена от 1шт: <span>от 45р/шт.</span></div>
+                                <div class="product-card__price">Цена от 10шт: <span>от 35р/шт.</span></div>
+                            </div>
+                            <div class="product-card__category">Снеки</div>
+                        </div>
+                    </a>
+                    <button class="product-card__buy" type="button">Купить</button>
+                </article>
+            </li>
+            <li class="categories-tabs__product">
+                <article class="product-card product-card--green">
+                    <a class="product-card__top" href="#">
+                        <div class="product-card__img-wrapper">
+                            <img class="product-card__img" src="img/categories-tabs/1.jpg" alt="Product img">
+                        </div>
+
+                        <div class="product-card__content">
+                            <div class="product-card__badge-wrapper">
+                                <span class="product-card__badge">Новинка</span>
+                            </div>
+                            <div class="product-card__title">чипсы Delicados nachos</div>
+                            <div class="product-card__desc">кукурузные оригинальные 500 г</div>
+                            <div class="product-card__pricing">
+                                <div class="product-card__price">Цена от 1шт: <span>от 45р/шт.</span></div>
+                                <div class="product-card__price">Цена от 10шт: <span>от 35р/шт.</span></div>
+                            </div>
+                            <div class="product-card__category">Снеки</div>
+                        </div>
+                    </a>
+                    <button class="product-card__buy" type="button">Купить</button>
+                </article>
+            </li>
+            <li class="categories-tabs__product">
+                <article class="product-card product-card--red">
+                    <a class="product-card__top" href="#">
+                        <div class="product-card__img-wrapper">
+                            <img class="product-card__img" src="img/categories-tabs/1.jpg" alt="Product img">
+                        </div>
+
+                        <div class="product-card__content">
+                            <div class="product-card__badge-wrapper">
+                                <span class="product-card__badge">Хит!</span>
+                            </div>
+                            <div class="product-card__title">чипсы Delicados nachos</div>
+                            <div class="product-card__desc">кукурузные оригинальные 500 г</div>
+                            <div class="product-card__pricing">
+                                <div class="product-card__price">Цена от 1шт: <span>от 45р/шт.</span></div>
+                                <div class="product-card__price">Цена от 10шт: <span>от 35р/шт.</span></div>
+                            </div>
+                            <div class="product-card__category">Снеки</div>
+                        </div>
+                    </a>
+                    <button class="product-card__buy" type="button">Купить</button>
+                </article>
+            </li>
+            <li class="categories-tabs__product">
+                <article class="product-card product-card--grey">
+                    <a class="product-card__top" href="#">
+                        <div class="product-card__img-wrapper">
+                            <img class="product-card__img" src="img/categories-tabs/1.jpg" alt="Product img">
+                        </div>
+
+                        <div class="product-card__content">
+                            <div class="product-card__title">чипсы Delicados nachos</div>
+                            <div class="product-card__desc">кукурузные оригинальные 500 г</div>
+                            <div class="product-card__pricing">
+                                <div class="product-card__price">Цена от 1шт: <span>от 45р/шт.</span></div>
+                                <div class="product-card__price">Цена от 10шт: <span>от 35р/шт.</span></div>
+                            </div>
+                            <div class="product-card__category">Снеки</div>
+                        </div>
+                    </a>
+                    <button class="product-card__buy" type="button">Купить</button>
+                </article>
+            </li>
+        </ul>
+        <ul class="categories-tabs__products-list" data-tab="5">
+            <li class="categories-tabs__product">
+                <article class="product-card">
+                    <a class="product-card__top" href="#">
+                        <div class="product-card__img-wrapper">
+                            <img class="product-card__img" src="img/categories-tabs/1.jpg" alt="Product img">
+                        </div>
+
+                        <div class="product-card__content">
+                            <div class="product-card__title">чипсы Delicados nachos</div>
+                            <div class="product-card__desc">кукурузные оригинальные 500 г</div>
+                            <div class="product-card__pricing">
+                                <div class="product-card__price">Цена от 1шт: <span>от 45р/шт.</span></div>
+                                <div class="product-card__price">Цена от 10шт: <span>от 35р/шт.</span></div>
+                            </div>
+                            <div class="product-card__category">Снеки</div>
+                        </div>
+                    </a>
+                    <button class="product-card__buy" type="button">Купить</button>
+                </article>
+            </li>
+            <li class="categories-tabs__product">
+                <article class="product-card product-card--green">
+                    <a class="product-card__top" href="#">
+                        <div class="product-card__img-wrapper">
+                            <img class="product-card__img" src="img/categories-tabs/1.jpg" alt="Product img">
+                        </div>
+
+                        <div class="product-card__content">
+                            <div class="product-card__badge-wrapper">
+                                <span class="product-card__badge">Новинка</span>
+                            </div>
+                            <div class="product-card__title">чипсы Delicados nachos</div>
+                            <div class="product-card__desc">кукурузные оригинальные 500 г</div>
+                            <div class="product-card__pricing">
+                                <div class="product-card__price">Цена от 1шт: <span>от 45р/шт.</span></div>
+                                <div class="product-card__price">Цена от 10шт: <span>от 35р/шт.</span></div>
+                            </div>
+                            <div class="product-card__category">Снеки</div>
+                        </div>
+                    </a>
+                    <button class="product-card__buy" type="button">Купить</button>
+                </article>
+            </li>
+            <li class="categories-tabs__product">
+                <article class="product-card product-card--red">
+                    <a class="product-card__top" href="#">
+                        <div class="product-card__img-wrapper">
+                            <img class="product-card__img" src="img/categories-tabs/1.jpg" alt="Product img">
+                        </div>
+
+                        <div class="product-card__content">
+                            <div class="product-card__badge-wrapper">
+                                <span class="product-card__badge">Хит!</span>
+                            </div>
+                            <div class="product-card__title">чипсы Delicados nachos</div>
+                            <div class="product-card__desc">кукурузные оригинальные 500 г</div>
+                            <div class="product-card__pricing">
+                                <div class="product-card__price">Цена от 1шт: <span>от 45р/шт.</span></div>
+                                <div class="product-card__price">Цена от 10шт: <span>от 35р/шт.</span></div>
+                            </div>
+                            <div class="product-card__category">Снеки</div>
+                        </div>
+                    </a>
+                    <button class="product-card__buy" type="button">Купить</button>
+                </article>
+            </li>
+            <li class="categories-tabs__product">
+                <article class="product-card">
+                    <a class="product-card__top" href="#">
+                        <div class="product-card__img-wrapper">
+                            <img class="product-card__img" src="img/categories-tabs/1.jpg" alt="Product img">
+                        </div>
+
+                        <div class="product-card__content">
+                            <div class="product-card__title">чипсы Delicados nachos</div>
+                            <div class="product-card__desc">кукурузные оригинальные 500 г</div>
+                            <div class="product-card__pricing">
+                                <div class="product-card__price">Цена от 1шт: <span>от 45р/шт.</span></div>
+                                <div class="product-card__price">Цена от 10шт: <span>от 35р/шт.</span></div>
+                            </div>
+                            <div class="product-card__category">Снеки</div>
+                        </div>
+                    </a>
+                    <button class="product-card__buy" type="button">Купить</button>
+                </article>
+            </li>
+        </ul>
+    </section>
+</section>
+        </div>
+        <div id="map"></div>
+<script>
+    function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 4,
+            center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+        });
+    }
+</script>
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly"
+        async
+></script>
+
+    </main>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__col">
+                <a class="footer__logo logo" href="#">
+                    <img class="footer__img" src="img/sprite.svg#logo-footer" alt="logo">
+                </a>
+
+                <div class="footer__text">
+                    <p>
+                        ТОРГОВЫЙ ДОМ «Сибиряк» - одна из компаний в Краснодарском крае, которая занимается оптовой
+                        торговлей продуктами питания. Компания работает на рынке продуктов питания четырнадцатый год и
+                        исключительно хорошо зарекомендовала себя в регионе.
+                    </p>
+                </div>
+            </div>
+            <div class="footer__col">
+                <nav class="menu menu--column">
+                    <ul class="menu__list menu__list--column">
+                        <li class="menu__item menu__item--green menu__item--green-accent">
+                            <a class="menu__link" href="#">
+                                <svg class="menu__svg">
+                                    <use xlink:href="img/sprite.svg#catalogue-icon"></use>
+                                </svg>
+                                Каталог
+                            </a>
+                        </li>
+
+                        <li class="menu__item menu__item--green">
+                            <a class="menu__link" href="#">
+                                Акции
+                            </a>
+                        </li>
+
+                        <li class="menu__item menu__item--green">
+                            <a class="menu__link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+
+                        <li class="menu__item menu__item--green">
+                            <a class="menu__link" href="#">
+                                О нас
+                            </a>
+                        </li>
+
+                        <li class="menu__item menu__item--green">
+                            <a class="menu__link" href="#">
+                                Доставка и оплата
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__col">
+                <address class="footer__address">
+                    <div class="footer__box">
+                        <div class="footer__left">
+                            Адреса:
+                        </div>
+                        <div class="footer__right">
+                            <p>Восточно-кругликовская 42/3 к1</p>
+                            <p>Восточно-кругликовская 46/11</p>
+                            <p>Восточно-кругликовская 48Г</p>
+                            <p>2я Ямайская 4А</p>
+                            <p>Карякина 10</p>
+                        </div>
+                    </div>
+                    <div class="footer__box">
+                        <div class="footer__left">
+                            Телефоны:
+                        </div>
+                        <div class="footer__right">
+                            <a class="footer__link" href="tel:89180000000">8(918) 000-00-00</a>
+                            <a class="footer__link" href="tel:89180000000">8(918) 000-00-00</a>
+                        </div>
+                    </div>
+                    <div class="footer__box">
+                        <div class="footer__left">
+                            E-mail:
+                        </div>
+                        <div class="footer__right">
+                            <a class="footer__link" href="mailto:Example@mail.ru">Example@mail.ru</a>
+                        </div>
+                    </div>
+                </address>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="js/plugins.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

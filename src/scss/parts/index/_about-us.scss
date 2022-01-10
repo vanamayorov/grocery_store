@@ -1,0 +1,27 @@
+.about-us {
+  padding-bottom: 90px;
+
+  @include media-w($xs) {
+    padding-bottom: 45px;
+  }
+
+  &__title {
+    margin-bottom: 45px;
+  }
+
+  &__content {
+    color: $black-main;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 25px;
+
+        @include media-w($sm) {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
